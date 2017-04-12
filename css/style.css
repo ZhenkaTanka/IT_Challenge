@@ -178,5 +178,196 @@ th {
   padding: 0;
 }
 body {
-  background-color: blue;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 36px;
+  padding: 0;
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-style: normal;
+  src: local('OpenSans'), local('OpenSans-Regular'), local('OpenSans Regular'), url('../fonts/OpenSans-Regular.woff2') format('woff2'), url('../fonts/OpenSans-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 600;
+  font-style: normal;
+  src: local('OpenSans Semibold'), local('OpenSans Semibold'), url('../fonts/OpenSans-Semibold.woff2') format('woff2'), url('../fonts/OpenSans-Semibold.woff') format('woff');
+}
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 700;
+  font-style: normal;
+  src: local('OpenSans Bold'), local('OpenSans-Bold'), url('../fonts/OpenSans-Bold.woff2') format('woff2'), url('../fonts/OpenSans-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Raleway SemiBolt';
+  font-weight: 600;
+  font-style: normal;
+  src: local('Raleway SemiBold'), local('Raleway-SemiBold'), url('../fonts/Raleway-SemiBold.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url('../fonts/Raleway-Bold.ttf') format('ttf');
+}
+.btn {
+  background-color: #17d0ac;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 36px;
+  text-decoration: none;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 39px;
+  padding-right: 39px;
+  border-radius: 3px;
+}
+.main-header {
+  background: #e6dada;
+  background: linear-gradient(to bottom, #e6dada, #274046);
+  background-image: url(../../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding-top: 29px;
+  color: white;
+}
+.main-header__wrapper {
+  max-width: 1170px;
+  padding-left: 57px;
+  padding-right: 57px;
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.main-header__navigation {
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 22px;
+  padding-bottom: 20px;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+  margin-bottom: 110px;
+}
+.main-header__desc {
+  margin-top: 63px;
+  margin-left: 35px;
+}
+.main-header__promo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.main-header__phone-imgs {
+  width: 400px;
+  height: 663px;
+  position: relative;
+  margin-right: 63px;
+  margin-bottom: -100px;
+}
+.main-header__phone-img {
+  position: absolute;
+  bottom: 0;
+}
+.main-header__phone-img_source {
+  right: 124px;
+}
+.logo {
+  margin: 0;
+}
+.logo-link {
+  font-family: 'Raleway SemiBolt';
+  color: #1ab798;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.header-desc h2 {
+  font-family: 'Raleway';
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+}
+.header-desc i {
+  font-size: 22px;
+  font-weight: 600;
+  font-style: normal;
+}
+.header-desc__list {
+  list-style: none;
+  margin: 0;
+  margin-top: 26px;
+  margin-bottom: 75px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.header-desc__item {
+  padding-left: 23px;
+  position: relative;
+}
+.header-desc__item::before {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  margin-top: -4px;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transform: rotate(-45deg);
+}
+.header-desc__btn {
+  padding-left: 77px;
+  position: relative;
+  margin-left: 10px;
+}
+.header-desc__btn::before {
+  content: '';
+  position: absolute;
+  width: 37px;
+  height: 35px;
+  left: 22px;
+  top: 50%;
+  margin-top: -17px;
+  background-image: url(../../img/icon-download.png);
+}
+.main-navigation__list {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+.main-navigation__item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-navigation__item:last-child {
+  padding-right: 0px;
+}
+.main-navigation__link {
+  color: #282528;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.main-navigation__link:hover {
+  opacity: 1;
 }
