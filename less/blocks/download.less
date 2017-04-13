@@ -1,0 +1,39 @@
+.download__list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.download__item {
+    margin-right: 20px;
+}
+
+.download__link {
+    display: inline-flex;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    .no-text();
+    
+    background-color: #0098cd;
+    background-image: url(../../img/icons/icon-apple.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    &:hover {
+        background-color: #222;
+    }
+    
+    &_appstore {
+        background-position: center 16px;
+    }
+    
+    &_playmarket {
+        background-image: url(../../img/icons/icon-android.svg);
+    }
+    
+    &_windows {
+        background-image: url(../../img/icons/icon-windows.svg);
+    }
+}

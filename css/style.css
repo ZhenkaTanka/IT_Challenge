@@ -180,7 +180,6 @@ th {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  line-height: 36px;
   padding: 0;
 }
 @font-face {
@@ -233,7 +232,7 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  padding-top: 29px;
+  padding-top: 28px;
   color: white;
 }
 .main-header__wrapper {
@@ -272,20 +271,23 @@ body {
 }
 .main-header__phone-imgs {
   width: 400px;
-  height: 663px;
+  height: 638px;
   position: relative;
   margin-right: 63px;
   margin-bottom: -100px;
 }
 .main-header__phone-img {
   position: absolute;
-  bottom: 0;
+  bottom: -23px;
 }
 .main-header__phone-img_source {
   right: 124px;
 }
 .logo {
   margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
 }
 .logo-link {
   font-family: 'Raleway SemiBolt';
@@ -295,22 +297,94 @@ body {
   font-weight: 600;
   line-height: 36px;
 }
+.section__title {
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 36px;
+  color: #1ab798;
+  margin: 0;
+  padding-bottom: 18px;
+  position: relative;
+}
+.section__title::after {
+  content: '';
+  position: absolute;
+  width: 160px;
+  height: 18px;
+  left: 50%;
+  margin-left: -80px;
+  bottom: 0;
+  background-image: url(../../img/lines.png);
+  background-repeat: no-repeat;
+}
+.section__desc {
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-bottom: 75px;
+  color: #282528;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 970px;
+  line-height: 36px;
+}
+.download__list {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.download__item {
+  margin-right: 20px;
+}
+.download__link {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #0098cd;
+  background-image: url(../../img/icons/icon-apple.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.download__link:hover {
+  background-color: #222;
+}
+.download__link_appstore {
+  background-position: center 16px;
+}
+.download__link_playmarket {
+  background-image: url(../../img/icons/icon-android.svg);
+}
+.download__link_windows {
+  background-image: url(../../img/icons/icon-windows.svg);
+}
 .header-desc h2 {
   font-family: 'Raleway';
   font-size: 42px;
   font-weight: 700;
+  line-height: 36px;
   margin: 0;
 }
 .header-desc i {
   font-size: 22px;
   font-weight: 600;
+  line-height: 36px;
   font-style: normal;
 }
 .header-desc__list {
   list-style: none;
   margin: 0;
-  margin-top: 26px;
-  margin-bottom: 75px;
+  margin-top: 28px;
+  margin-bottom: 79px;
   padding: 0;
   font-size: 16px;
   font-weight: 400;
@@ -318,6 +392,7 @@ body {
 .header-desc__item {
   padding-left: 23px;
   position: relative;
+  line-height: 36px;
 }
 .header-desc__item::before {
   content: "";
@@ -346,6 +421,60 @@ body {
   margin-top: -17px;
   background-image: url(../../img/icon-download.png);
 }
+.key-features {
+  max-width: 1170px;
+  padding-left: 57px;
+  padding-right: 57px;
+  margin: 0 auto;
+  margin-top: 115px;
+  margin-bottom: 49px;
+}
+.key-features__flex {
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.key-features__list {
+  -ms-flex-preferred-size: 325px;
+      flex-basis: 325px;
+  list-style: none;
+  margin: 0;
+  margin-top: 72px;
+  padding: 0;
+}
+.key-features__item {
+  padding-left: 80px;
+  margin-bottom: 97px;
+  position: relative;
+}
+.key-features__item img {
+  position: absolute;
+  left: 0;
+}
+.key-features__item-title {
+  display: block;
+  color: #282528;
+  font-family: 'Raleway';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  padding-top: 4px;
+}
+.key-features__item-desc {
+  color: #282528;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.key-features__phone-img {
+  text-align: center;
+  -ms-flex-preferred-size: 485px;
+      flex-basis: 485px;
+}
+.key-features__phone-img img {
+  margin-left: 30px;
+}
 .main-navigation__list {
   list-style: none;
   display: -ms-flexbox;
@@ -370,4 +499,178 @@ body {
 }
 .main-navigation__link:hover {
   opacity: 1;
+}
+.profile-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: rgba(14, 180, 147, 0.85);
+  color: white;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 9px;
+  padding-left: 23px;
+  padding-right: 20px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.profile-info__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.profile-info__desc {
+  text-transform: lowercase;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+.profile-info_social-links {
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-top: auto;
+  padding: 0;
+  padding-left: 3px;
+}
+.profile-info__social-item {
+  margin-right: 5px;
+}
+.profile-info__social-item:last-child {
+  margin-right: 0;
+}
+.profile-info__social-link {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url(../../img/FB.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.profile-info__social-link_facebook {
+  background-image: url(../../img/FB.png);
+}
+.profile-info__social-link_twitter {
+  background-image: url(../../img/Twitter.png);
+}
+.profile-info__social-link_google {
+  background-image: url(../../img/G+.png);
+}
+.team {
+  margin-top: 87px;
+}
+.team__profile {
+  text-align: center;
+}
+.team__profile:hover .team__profile-name {
+  color: #0eb493;
+}
+.team__wrapper {
+  max-width: 1170px;
+  padding-left: 57px;
+  padding-right: 57px;
+  margin: 0 auto;
+}
+.team__desc {
+  color: #062033;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0 auto;
+  margin-top: 36px;
+}
+.team__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: 103px;
+}
+.team__photo {
+  width: 270px;
+  height: 300px;
+  position: relative;
+}
+.team__photo:hover .team__profile-info {
+  display: -ms-flexbox;
+  display: flex;
+}
+.team__profile-info {
+  display: none;
+}
+.team__profile-name {
+  color: #062033;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 15px;
+}
+.team__profile-position {
+  color: #062033;
+  opacity: 0.56;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 4px;
+}
+.video {
+  background-color: #31d4e7;
+}
+.video__wrapper {
+  max-width: 1170px;
+  padding-left: 57px;
+  padding-right: 57px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-top: 70px;
+  padding-bottom: 65px;
+}
+.video__iframe {
+  margin-top: 1px;
+  margin-right: -5px;
+}
+.video-info {
+  padding-left: 3px;
+  -ms-flex-preferred-size: 550px;
+      flex-basis: 550px;
+}
+.video-info__title {
+  color: #222;
+  font-family: 'Raleway';
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 6px;
+}
+.video-info__desc {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+  margin-top: 19px;
+  margin-left: 2px;
+}
+.video-info__download-links {
+  margin-top: 21px;
+  margin-left: 2px;
 }
