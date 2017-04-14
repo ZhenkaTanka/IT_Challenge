@@ -232,7 +232,7 @@ body {
   left: 50%;
   margin-left: -80px;
   bottom: 0;
-  background-image: url(../../img/lines.png);
+  background-image: url(../img/lines.png);
   background-repeat: no-repeat;
 }
 .section__desc {
@@ -312,7 +312,7 @@ body {
 .main-header {
   background: #e6dada;
   background: linear-gradient(to bottom, #e6dada, #274046);
-  background-image: url(../../img/header-bg.jpg);
+  background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -369,7 +369,7 @@ body {
 }
 .main-footer {
   background-color: black;
-  background-image: url(../../img/footer-bg.png);
+  background-image: url(../img/footer-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -388,13 +388,14 @@ body {
   -ms-flex-pack: justify;
       justify-content: space-between;
   margin-top: 98px;
+  margin-bottom: 55px;
 }
 .contact__title {
   color: white;
   padding-bottom: 19px;
 }
 .contact__title::after {
-  background-image: url(../../img/lines-white.png);
+  background-image: url(../img/lines-white.png);
 }
 .contact__info {
   max-width: 430px;
@@ -439,15 +440,15 @@ body {
 }
 .contact__social-link_facebook {
   background-color: #3b5997;
-  background-image: url(../../img/FB.png);
+  background-image: url(../img/FB.png);
 }
 .contact__social-link_twitter {
   background-color: #3ec2f3;
-  background-image: url(../../img/Twitter.png);
+  background-image: url(../img/Twitter.png);
 }
 .contact__social-link_google {
   background-color: #e44c41;
-  background-image: url(../../img/G+.png);
+  background-image: url(../img/G+.png);
 }
 .contact__phone {
   display: block;
@@ -502,7 +503,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   background-color: #0098cd;
-  background-image: url(../../img/icons/icon-apple.svg);
+  background-image: url(../img/icons/icon-apple.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -513,10 +514,41 @@ body {
   background-position: center 16px;
 }
 .download__link_playmarket {
-  background-image: url(../../img/icons/icon-android.svg);
+  background-image: url(../img/icons/icon-android.svg);
 }
 .download__link_windows {
-  background-image: url(../../img/icons/icon-windows.svg);
+  background-image: url(../img/icons/icon-windows.svg);
+}
+.footer-decs {
+  border-top: 1px solid #4f4f4f;
+}
+.footer-decs__wrapper {
+  max-width: 1170px;
+  padding-left: 57px;
+  padding-right: 57px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-top: 36px;
+  padding-bottom: 20px;
+}
+.footer-desc__left {
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+}
+.footer-desc__right {
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
 }
 .header-desc h2 {
   font-family: 'Raleway';
@@ -570,7 +602,7 @@ body {
   left: 22px;
   top: 50%;
   margin-top: -17px;
-  background-image: url(../../img/icon-download.png);
+  background-image: url(../img/icon-download.png);
 }
 .key-features {
   max-width: 1170px;
@@ -706,18 +738,18 @@ body {
   white-space: nowrap;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.3);
-  background-image: url(../../img/FB.png);
+  background-image: url(../img/FB.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 .profile-info__social-link_facebook {
-  background-image: url(../../img/FB.png);
+  background-image: url(../img/FB.png);
 }
 .profile-info__social-link_twitter {
-  background-image: url(../../img/Twitter.png);
+  background-image: url(../img/Twitter.png);
 }
 .profile-info__social-link_google {
-  background-image: url(../../img/G+.png);
+  background-image: url(../img/G+.png);
 }
 .team {
   margin-top: 87px;
